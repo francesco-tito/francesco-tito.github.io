@@ -1,0 +1,482 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.nome-logo > a {
+  color: #404040;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.menu-container {
+  color: #404040;
+  background-color: white;
+  display:flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.selezionato {
+  color: #3A6252;
+  font-weight: 700;
+}
+
+.chi-sono-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.chi-sono, .contatti {
+  margin-left: 80px;
+}
+
+.home > a, .chi-sono > a, .contatti > a {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contatti {
+  margin-right:100px;
+}
+
+.home {
+  margin-left: -200px;
+}
+
+.img-box {
+  background-color: #3A6252;
+  position: relative;
+}
+
+.presentazione {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.intro > a {
+  text-decoration: none;
+  color:#3A6252;
+}
+
+.intro > a:hover {
+  color: #A0B1AA;
+}
+
+
+.contenitore {
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px 100px 30px 100px;
+}
+
+.chi-sono-preview {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+}
+
+
+.chi-sono-preview > p {
+  line-height: 45px;
+}
+
+.img-box2 {
+  margin-left: 50px;
+}
+
+.img-box3 {
+  margin-right: 50px;
+}
+
+
+.form-utente {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3A6252;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 100%;
+  padding-top: 50px;
+  margin: 50px auto;
+}
+
+.form-contattami {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #3A6252;
+  border: 1px solid #d6d9dc;
+  border-radius: 20px;
+
+  width: 70%;
+  padding-top: 50px;
+  margin: 50px auto;
+}
+
+.form-titolo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 40px;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.form-row input[type='text'], .form-row input[type='email'] {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 70%;
+  padding: 7px;
+  font-size: 14px;
+  margin: auto;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+}
+
+.form-row input[type='text']:invalid, .form-row input[type='Email']:invalid {
+  border: 1px solid #d55c5f;
+  color: #d55c5f;
+  box-shadow: none;
+}
+
+
+.form-row textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: auto;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+  width: 70%;
+  min-height: 100px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: vertical;
+}
+
+.form-row button {
+
+  font-size: 16px;
+  font-weight: bold;
+  padding: 25px;
+
+  color: #3A6252;
+  background-color: white;
+
+  border: none;
+  border-radius: 20px;
+
+  min-width: 100px;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  color: #A0B1AA;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: #3A6252;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+}
+
+footer > hr {
+ margin: 20px auto;
+}
+
+
+/*MOBILE STYLES*/
+@media only screen and (max-width:829px) {
+
+  .page {
+    flex-direction: column;
+    min-width: 320px;
+  }
+
+  .nome-logo {
+    font-size: 24px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 25px 0px;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .home {
+    margin-left: 0px;
+  }
+
+  .chi-sono, .contatti {
+    margin-left: 0px;
+  }
+
+  .contatti {
+    margin-right: 0px;
+  }
+
+  .img-box {
+    padding: 20px;
+  }
+
+  .chi-sono-title > h1 {
+    font-size: 100%;
+  }
+
+  .presentazione > h1 {
+    font-size: 32px;
+  }
+
+  .contenitore {
+    padding: 30px;
+  }
+
+  .contenitore > h2 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #3A6252;
+    margin-bottom: 0px;
+    text-align: center;
+    }
+
+    .chi-sono-preview {
+      flex-direction: column;
+    }
+
+
+    .rev {
+      flex-direction: column-reverse;
+    }
+
+
+    .img-box2 {
+      margin: 20px;
+
+    }
+
+    .img-box3 {
+      margin: 20px;
+
+    }
+
+    .typewriter {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .typewriter-text {
+        display: flex;
+        white-space: normal;
+    }
+
+
+}
+
+/*TABLET STYLES*/
+@media only screen and (min-width:830px) and (max-width: 1199px) {
+
+  .nome-logo {
+    font-size: 34px;
+    padding: 25px 20px 25px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 25px 20px 25px 0px;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .home {
+    margin-left: 0px;
+  }
+
+  .contatti {
+    margin-right: 0px;
+  }
+
+  .presentazione > h1 {
+    font-size: 44px;
+  }
+
+  .contenitore {
+    padding:25px;
+  }
+
+  .contenitore > h2 {
+    font-weight:bold;
+    font-size: 30px;
+    color: #3A6252;
+    margin-bottom: 50px;
+    text-align: center;
+    }
+
+    .typewriter {
+      display: inline-block;
+    }
+
+    .typewriter-text {
+        display: inline-block;
+        overflow: hidden;
+        margin-top: 45px;
+        letter-spacing: 2px;
+        animation: typing 7s steps(50, end), blink .75s step-end infinite;
+        white-space: nowrap;
+        font-size: 24px;
+        border-right: 2px solid #FF871C;
+        box-sizing: border-box;
+    }
+
+    .chi-sono-preview {
+      flex-direction: column;
+    }
+
+
+    .rev {
+      flex-direction: column-reverse;
+    }
+
+
+    .img-box2 {
+      margin: 20px;
+
+    }
+
+
+}
+
+/*DESKTOP STYLES*/
+@media only screen and (min-width:1200px) {
+
+  .page {
+    width: 100%;
+
+  }
+
+
+
+  .nome-logo {
+    font-size: 34px;
+    margin-left: 100px;
+    padding: 25px 20px 25px 0px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 20px 25px 0px;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  .presentazione > h1 {
+    font-size: 58px;
+  }
+
+  .contenitore > h2 {
+    font-size: 50px;
+    font-weight:300;
+    color: #3A6252;
+    margin-bottom: 50px;
+    }
+
+    .typewriter {
+    	display: inline-block;
+    }
+
+    .typewriter-text {
+        display: inline-block;
+        overflow: hidden;
+        margin-top: 45px;
+      	letter-spacing: 2px;
+     	  animation: typing 7s steps(50, end), blink .75s step-end infinite;
+        white-space: nowrap;
+        font-size: 24px;
+        border-right: 2px solid #FF871C;
+        box-sizing: border-box;
+    }
+
+
+}
+
+
+
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #FF871C;
+    }
+}
